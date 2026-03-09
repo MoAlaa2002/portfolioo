@@ -11,26 +11,23 @@
   
 
   <!-- Header -->
-  <header>
-    <nav class="container">
-      <h2 class="logo">Mohamed Alaa</h2>
-      <ul>
-    
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-       <li> <a href="#services"> Services</a> </li>
-       <li><a href="#contact">Contact</a></li>
+<header>
+  <nav class="container navbar">
+    <h2 class="logo">Mohamed <span>Alaa</span></h2>
 
-               <!-- <li>
-          <a href="https://github.com/MoAlaa2002" target="_blank">
-            <img src="github.svg" alt="GitHub" class="icon"> GitHub
-          </a>
-        </li> -->
-      </ul>
-    </nav>
-  </header> 
+    <div class="menu-toggle">☰</div>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
 
  <section class="hero">
   <div class="container hero-content">
@@ -41,7 +38,7 @@
       
       <div class="hero-btns">
         <a href="#projects" class="btn">Explore My Work</a>
-        <a href="Mohamed-Alaa-CV.pdf" class="btn outline" download>Get Resume</a>
+        <a href="Mohamed_Alaa_CV.pdf" class="btn outline" download>Get Resume</a>
       </div>
     </div>
 
@@ -101,7 +98,7 @@
       <div class="exp-card highlight">
         <div class="exp-header">
           <h3>Flutter Developer Intern</h3>
-          <span class="exp-date">Dec 2025 - Present</span>
+          <span class="exp-date">Dec 2025 - Feb 2026</span>
         </div>
         <p class="company">National Telecommunication Institute (NTI) | Digital Egypt Youth (DEY)</p>
         <ul class="exp-details">
@@ -256,19 +253,19 @@
 <!--Busira-->
  <div class="project-card">
   <div class="project-img">
-    <img src="busira.png" alt="Basira App">
+    <img src="basira.jpg" alt="بصيرة-Basira App">
     <div class="project-overlay">
-      <a href="https://github.com/yourusername/basira" target="_blank" class="view-btn">View Code</a>
+      <a href="https://play.google.com/store/apps/details?id=com.moalaa.busira" target="_blank" class="view-btn">View on Google Play</a>
     </div>
   </div>
 
   <div class="project-info">
-    <h3>Basira App</h3>
-  <p>
-  Islamic mobile application built with <strong>Flutter</strong>, 
-  focusing on a clean and calm user experience. 
-  Implemented <strong>Cubit</strong> for efficient state management 
-  and <strong>local storage</strong> to persist user data.
+    <h3>بصيرة-Basira</h3>
+<p>
+  Developed an Islamic companion app with <strong>Flutter</strong> featuring Quran reminders, 
+  prayer times, Hadith, and Qibla direction. Implemented state management with <strong>Cubit</strong> 
+  and <strong>local storage</strong> for persistent data. Published on <strong>Google Play Store</strong> 
+  with complete optimization and Arabic metadata.
 </p>
 
     <div class="project-tags">
@@ -499,13 +496,14 @@
     <p>© 2026 Mohamed Alaa</p>
   </footer>
 
-  <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navbar = document.querySelector('.navbar');
+ <script>
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-    menuToggle.addEventListener('click', () => {
-        navbar.classList.toggle('active');
-    });
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
 </script>
+
 </body>
 </html>
